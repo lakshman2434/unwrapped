@@ -2,7 +2,7 @@
 import { init } from '@rematch/core';
 import createPersistPlugin, { getPersistor } from '@rematch/persist';
 import createLoadingPlugin from '@rematch/loading';
-import { AsyncStorage } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as models from '../models';
 
 // Create plugins

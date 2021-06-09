@@ -26,7 +26,7 @@ const ArticlesList = ({
         onRefresh={() => reFetch({ forceSync: true })}
         refreshing={loading}
         renderItem={({ item }) => (
-          <Card style={{ opacity: item.placeholder ? 0.3 : 1 }}>
+          <Card style={{ opacity: item.placeholder ? 0.4 : 1 }}>
             <TouchableOpacity
               activeOpacity={0.8}
               onPress={() => (
