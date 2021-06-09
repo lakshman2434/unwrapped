@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Layout from '../../components/Articles/List';
 
-class ArticlesListContainer extends Component {
+class FeedListContainer extends Component {
   constructor(props) {
     super();
 
@@ -76,7 +76,7 @@ class ArticlesListContainer extends Component {
   };
 }
 
-ArticlesListContainer.propTypes = {
+FeedListContainer.propTypes = {
   listFlat: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   listPaginated: PropTypes.shape({}).isRequired,
   meta: PropTypes.shape({
@@ -87,7 +87,7 @@ ArticlesListContainer.propTypes = {
   page: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
-ArticlesListContainer.defaultProps = {
+FeedListContainer.defaultProps = {
   page: 1,
 };
 
@@ -102,4 +102,4 @@ const mapDispatchToProps = (dispatch) => ({
   fetchData: dispatch.articles.fetchList,
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ArticlesListContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(FeedListContainer);

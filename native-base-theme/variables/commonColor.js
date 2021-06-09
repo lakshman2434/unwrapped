@@ -112,8 +112,8 @@ export default {
   },
 
   // Card
-  cardDefaultBg: '#fff',
-  cardBorderColor: '#ccc',
+  cardDefaultBg: '#21213D',
+  cardBorderColor: '#DFDFDF',
   cardBorderRadius: 2,
   cardItemPadding: platform === PLATFORM.IOS ? 10 : 12,
 
@@ -130,8 +130,8 @@ export default {
   checkboxTickColor: '#fff',
 
   // Color
-  brandPrimary: platform === PLATFORM.IOS ? '#007aff' : '#3F51B5',
-  brandInfo: '#62B1F6',
+  brandPrimary: platform === PLATFORM.IOS ? "#21213D" : "#21213D",
+  brandInfo: '#FF6000',
   brandSuccess: '#5cb85c',
   brandDanger: '#d9534f',
   brandWarning: '#f0ad4e',
@@ -139,7 +139,7 @@ export default {
   brandLight: '#a9a9a9',
 
   // Container
-  containerBgColor: '#fff',
+  containerBgColor: '#21213D',
 
   // Date Picker
   datePickerTextColor: '#000',
@@ -176,8 +176,8 @@ export default {
   tabActiveBgColor: platform === PLATFORM.IOS ? '#cde1f9' : '#3F51B5',
 
   // Header
-  toolbarBtnColor: platform === PLATFORM.IOS ? '#007aff' : '#fff',
-  toolbarDefaultBg: platform === PLATFORM.IOS ? '#F8F8F8' : '#3F51B5',
+  toolbarBtnColor: platform === PLATFORM.IOS ? '#21213D' : '#fff',
+  toolbarDefaultBg: platform === PLATFORM.IOS ? '#21213D' : '#3F51B5',
   toolbarHeight: platform === PLATFORM.IOS ? 64 : 56,
   toolbarSearchIconSize: platform === PLATFORM.IOS ? 20 : 23,
   toolbarInputColor: platform === PLATFORM.IOS ? '#CECDD2' : '#fff',
@@ -234,7 +234,7 @@ export default {
 
   // Progress Bar
   defaultProgressColor: '#E4202D',
-  inverseProgressColor: '#1A191B',
+  inverseProgressColor: '#FFFF',
 
   // Radio Button
   radioBtnSize: platform === PLATFORM.IOS ? 25 : 23,
@@ -268,7 +268,7 @@ export default {
   tabFontSize: 15,
 
   // Text
-  textColor: '#000',
+  textColor: '#FFFF',
   inverseTextColor: '#fff',
   noteFontSize: 14,
   get defaultTextColor() {

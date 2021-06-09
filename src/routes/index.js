@@ -4,7 +4,7 @@ import { Icon } from 'native-base';
 import DefaultProps from '../constants/navigation';
 import AppConfig from '../constants/config';
 
-import { ArticlesForm, ArticlesList, ArticlesSingle } from '../containers';
+import { ArticlesForm, FeedListContainer, ArticlesSingle } from '../containers';
 
 import AboutComponent from '../components/About';
 
@@ -18,21 +18,22 @@ const Index = (
         showLabel={false}
         {...DefaultProps.tabProps}
       >
-        
+
         <Stack
           key="Home"
           title="Discover Unwrapped"
-          icon={() => <Icon name="list" {...DefaultProps.icons} />}
+
+          icon={() => <Icon name="insights"  type="MaterialIcons" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
-          <Scene key="articlesList" component={ArticlesList} />
+          <Scene key="articlesList" component={FeedListContainer} />
           <Scene key="articlesSingle" component={ArticlesSingle} />
         </Stack>
 
         <Stack
           key="settings"
           title="Settings"
-          icon={() => <Icon name="settings" {...DefaultProps.icons} />}
+          icon={() => <Icon name="settings" type="MaterialIcons" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
           <Scene key="form" component={ArticlesForm} />

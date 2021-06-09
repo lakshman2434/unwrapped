@@ -2,11 +2,11 @@ import Colors from '../../native-base-theme/variables/commonColor';
 
 export default {
   navbarProps: {
-    navigationBarStyle: { backgroundColor: 'white' },
+    navigationBarStyle: { backgroundColor: Colors.brandPrimary },
     titleStyle: {
       color: Colors.textColor,
       alignSelf: 'center',
-      fontSize: Colors.fontSizeBase,
+      fontSize: Colors.fontSizeH3,
     },
     backButtonTintColor: Colors.textColor,
   },

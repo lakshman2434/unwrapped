@@ -31,7 +31,7 @@ const ArticlesList = ({
               activeOpacity={0.8}
               onPress={() => (
                 !item.placeholder
-                  ? Actions.articlesSingle({ id: item.id, title: item.name })
+                  ? Actions.feedSingle({ id: item.id, title: item.name })
                   : null
               )}
               style={{ flex: 1 }}
