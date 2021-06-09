@@ -16,6 +16,7 @@
     "@rematch/loading": "^1.2.1",
     "@rematch/persist": "^1.1.6",
     "axios": "^0.19.2",
+    "commitizen": "^4.2.4",
     "expo": "^41.0.0",
     "expo-font": "~9.1.0",
     "expo-status-bar": "~1.0.4",
