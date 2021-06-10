@@ -84,3 +84,8 @@ yarn start
 ## 👊 Further Help?
 
 This repo is a great place to start. But...if you'd prefer to sit back and have your new project built for you or just need some consultation, [get in touch with me directly](https://mcnam.ee) and I can organise a quote.
+
+
+travel vector PNG Designed By 588ku from <a href="https://pngtree.com/">Pngtree.com</a>
+
+<a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff - www.freepik.com</a>
