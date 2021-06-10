@@ -30,7 +30,7 @@ const listData = {
         cardColor: '#23233F',
         type: 'foodie',
         title: 'Foodie',
-        description: 'If you think adventure is dangerous try routine, it’s lethal. – Paulo Coelho',
+        description: 'I lost some weight once, but I found it again in the fridge.',
         hasInfoGraphics: true,
         categoryTags: ['gasAndTransport', 'hotelBookings', 'FlightBookings'],
       },
