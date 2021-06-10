@@ -6,10 +6,9 @@ import Layout from '../../components/Articles/List';
 class FeedListContainer extends Component {
   constructor(props) {
     super();
-
     // Prioritize (web) page route over last meta value
     const page = props.page || props.meta.page;
-
+    const shoppingListData = null;
     this.state = {
       error: null, loading: false, page: parseInt(page, 10) || 1,
     };
@@ -45,8 +44,11 @@ class FeedListContainer extends Component {
     this.setState({ loading: true, error: null, page });
 
     try {
-      await fetchData({ forceSync, page });
-      this.setState({ loading: false, error: null });
+        const response= await fetch("http://demo3334819.mockable.io/spendingMods");
+        const jsonResponse= await response.json();
+        this.setState({ shoppingListData: jsonResponse });
+        await fetchData({ forceSync, page });
+        this.setState({ loading: false, error: null });
     } catch (err) {
       this.setState({ loading: false, error: err.message });
     }
@@ -57,7 +59,7 @@ class FeedListContainer extends Component {
    */
   render = () => {
     const {
-      listFlat, listPaginated, pagination, meta,
+      shoppingListData, listFlat, listPaginated, pagination, meta,
     } = this.props;
     const { loading, error, page } = this.state;
 
